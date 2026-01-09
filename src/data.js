@@ -51,21 +51,21 @@ export const education = [
         degree: "BSc. (Hons) in Information Technology (Undergraduate)",
         year: "Mar 2024 - Present",
         desc: "Undergraduate student at SLIIT.",
-        logo: "/public/SLIIT_Logo_Crest.png"
+        logo: "./SLIIT_Logo_Crest.png"
     },
     {
         school: "DS Senanayake College Colombo 07",
         degree: "G.C.E Advanced Level",
         year: "Mar 2021 - Jan 2024",
         desc: "Mathematics Stream Passed with 1 Credit and 2 Simple passes",
-        logo: "/public/D._S._Senanayake_College_crest.png"
+        logo: "./D._S._Senanayake_College_crest.png"
     },
     {
         school: "Central College Piliyandala",
         degree: "G.C.E Ordinary Level",
         year: "Mar 2015 - Mar 2021",
         desc: "Physical Science Stream. District Rank: 15.",
-        logo: "/public/PCC.jpg"
+        logo: "./PCC.jpg"
     }
 
 ];
@@ -76,9 +76,9 @@ export const projects = [
         desc: "Chrome extension delivering real-time Sinhala news updates directly to the browser toolbar using background workers.",
         tags: ["JavaScript","RSS Feed", "Chrome API", "HTML/CSS"],
         images: [
-            "/public/projects/LankaCast/1.png",
-            "/public/projects/LankaCast/2.png",
-            "/public/projects/LankaCast/3.png",
+            "./projects/LankaCast/1.png",
+            "./projects/LankaCast/2.png",
+            "./projects/LankaCast/3.png",
         ],
         links: { demo: "https://github.com/SadeshRaj/LankaCast/releases/tag/v1.0.0", code: "https://github.com/SadeshRaj/LankaCast" }
     },
@@ -88,10 +88,10 @@ export const projects = [
         tags: ["JSPservlet", "MySQL","JS","HTML","Tailwind"],
         // ADD UP TO 3 IMAGE URLs HERE
         images: [
-            "/public/projects/CCSMC/img1.png",
-            "/public/projects/CCSMC/img2.png",
-            "/public/projects/CCSMC/img3.png",
-            "/public/projects/CCSMC/img4.png"
+            "./projects/CCSMC/img1.png",
+            "./projects/CCSMC/img2.png",
+            "./projects/CCSMC/img3.png",
+            "./projects/CCSMC/img4.png"
         ],
         links: { demo: "https://github.com/SadeshRaj/LankaCast/releases/tag/v1.0.0", code: "https://github.com/SadeshRaj/LankaCast" }
     }
