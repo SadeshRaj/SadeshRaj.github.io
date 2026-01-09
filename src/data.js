@@ -64,7 +64,7 @@ export const education = [
         school: "Central College Piliyandala",
         degree: "G.C.E Ordinary Level",
         year: "Mar 2015 - Mar 2021",
-        desc: "Physical Science Stream. District Rank: 15.",
+        desc: "Distinction-level performance with 8 As and 1 B",
         logo: "./PCC.jpg"
     }
 
