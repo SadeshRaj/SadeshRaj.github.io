@@ -112,12 +112,6 @@ const Navbar = () => {
                             {link.name}
                         </a>
                     ))}
-                    <a
-                        href="/resume.pdf"
-                        className="mt-4 flex items-center gap-2 px-6 py-3 text-cyan-400 border border-cyan-400/30 rounded-full hover:bg-cyan-400/10 transition-all"
-                    >
-                        <FileText size={18} /> Resume
-                    </a>
                 </div>
             </div>
         </nav>
