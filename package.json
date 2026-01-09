@@ -3,14 +3,12 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  // ADD THIS LINE (Replace user and repo name):
   "homepage": "https://SadeshRaj.github.io/my-portfolio",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    // ADD THESE TWO LINES:
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
