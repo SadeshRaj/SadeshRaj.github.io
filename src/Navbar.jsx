@@ -53,7 +53,6 @@ const Navbar = () => {
                 <div className="flex justify-between items-center h-16">
 
                     {/* --- LOGO SECTION --- */}
-                    {/* 3. Added onClick handler and cursor-pointer */}
                     <a
                         href="#"
                         onClick={handleLogoClick}
@@ -77,7 +76,6 @@ const Navbar = () => {
                         </span>
                     </a>
 
-                    {/* --- DESKTOP MENU (Unchanged) --- */}
                     <div className="hidden md:flex items-center space-x-8">
                         {navLinks.map((link) => (
                             <a
@@ -91,7 +89,6 @@ const Navbar = () => {
                         ))}
                     </div>
 
-                    {/* --- MOBILE MENU BUTTON (Unchanged) --- */}
                     <div className="md:hidden">
                         <button
                             onClick={() => setIsOpen(!isOpen)}
@@ -103,7 +100,6 @@ const Navbar = () => {
                 </div>
             </div>
 
-            {/* --- MOBILE MENU DROPDOWN (Unchanged) --- */}
             <div className={`md:hidden absolute w-full bg-slate-900/95 backdrop-blur-xl border-b border-slate-800 transition-all duration-300 overflow-hidden ${isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"}`}>
                 <div className="px-4 pt-4 pb-6 space-y-2 flex flex-col items-center">
                     {navLinks.map((link) => (

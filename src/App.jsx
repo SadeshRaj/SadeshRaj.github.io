@@ -284,7 +284,7 @@ function App() {
                                 <div className="absolute inset-0 bg-cyan-500/20 rounded-full blur-3xl animate-pulse"></div>
                                 <div className="relative w-full h-full rounded-2xl overflow-hidden border-2 border-slate-700/50 shadow-2xl rotate-3 hover:rotate-0 transition-all duration-500 bg-slate-800">
                                     <img
-                                        src="./src/public/Profile.jpg"
+                                        src="/public/Profile.jpg"
                                         alt="Profile"
                                         // CHANGE IS HERE: Added brightness-75, hover:brightness-100, and transition classes
                                         className="w-full h-full object-cover brightness-75 hover:brightness-100 transition-all duration-500"
