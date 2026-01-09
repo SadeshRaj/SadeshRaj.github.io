@@ -1,16 +1,52 @@
-# React + Vite
+# 👨‍💻 Portfolio | SadeshRaj
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive, and interactive developer portfolio built with **React**, **Vite**, and **Tailwind CSS**. This project showcases my skills, projects, and education in a clean, professional interface with smooth animations.
 
-Currently, two official plugins are available:
+🔗 **Live Demo:** [https://SadeshRaj.github.io/](https://SadeshRaj.github.io/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **⚡ High Performance:** Built with Vite for blazing fast load times.
+* **🎨 Modern UI/UX:** Glassmorphism effects, particle network background, and smooth fade-in animations.
+* **📱 Fully Responsive:** Optimized for all devices, from mobile phones to large desktop screens.
+* **🖼️ Interactive Project Showcase:**
+    * "Monitor" style frames for project screenshots.
+    * Auto-playing image carousel for each project.
+    * Hover effects with "Live Demo" and "Source Code" links.
+* **🎓 Creative Education Section:** ID-card styled layout for education history.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+* **Frontend:** [React](https://react.dev/), [Vite](https://vitejs.dev/)
+* **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+* **Icons:** [Lucide React](https://lucide.dev/), [Devicon](https://devicon.dev/)
+* **Animations:** Canvas API (Particle Field), CSS Keyframes
+* **Deployment:** GitHub Pages
+
+---
+
+
+
+## 📂 Project Structure
+
+```text
+root/
+├── public/              # Static assets (images, logos)
+│   ├── projects/        # Project screenshots
+│   ├── devLogo.png      # Website logo
+│   └── resume.pdf       # CV file
+├── src/
+│   ├── components/      # (Optional) Reusable components
+│   ├── data.js          # All content (Projects, Bio, Skills)
+│   ├── App.jsx          # Main application logic
+│   ├── Navbar.jsx       # Navigation bar
+│   └── ParticleField.jsx # Background animation
+├── index.html           # HTML entry point
+└── tailwind.config.js   # Tailwind configuration
+```
+## 📄 License
+*This project is open source and available under the MIT License.*
