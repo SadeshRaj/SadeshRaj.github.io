@@ -60,7 +60,7 @@ const Navbar = () => {
                     >
                         <div className="relative w-10 h-10 rounded-xl overflow-hidden border-2 border-slate-700 group-hover:border-cyan-400 transition-colors shadow-lg shadow-cyan-900/20 group-hover:shadow-cyan-400/50 group-active:scale-95 duration-200">
                             <img
-                                src="/public/devLogo.png"
+                                src="./devLogo.png"
                                 alt="Logo"
                                 className="w-full h-full object-cover"
                                 onError={(e) => {

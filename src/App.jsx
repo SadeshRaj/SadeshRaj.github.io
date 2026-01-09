@@ -416,7 +416,7 @@ function App() {
                             ))}
                         </div>
                         <p className="text-slate-600 text-sm font-mono">
-                            Designed & Built by ♥️ SadeshRaj
+                            Designed & Built by ♥️ SadeshRaj.  Last Update: 09/01/2026
                         </p>
                     </div>
                 </Section>
