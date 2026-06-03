@@ -1,3 +1,5 @@
+// src/App.jsx
+
 import { useState, useEffect, useRef } from 'react';
 import Navbar from './Navbar';
 import ParticleField from './ParticleField';
@@ -136,7 +138,7 @@ const ProjectModal = ({ project, onClose }) => {
                     <div className="prose prose-invert max-w-none text-slate-300 leading-relaxed border-t border-slate-800 pt-6">
                         <p>{project.desc}</p>
                         <p className="mt-4 text-slate-400 text-sm italic">
-                            (You can add more detailed descriptions, challenges faced, or features lists here in the data.js file to make this modal richer.)
+                            👨‍💻️Poorna Rajapakshe
                         </p>
                     </div>
                 </div>
@@ -286,7 +288,6 @@ function App() {
                                     <img
                                         src="./Profile.jpg"
                                         alt="Profile"
-                                        // CHANGE IS HERE: Added brightness-75, hover:brightness-100, and transition classes
                                         className="w-full h-full object-cover brightness-75 hover:brightness-100 transition-all duration-500"
                                     />
                                 </div>
@@ -302,24 +303,40 @@ function App() {
                         <span className="ml-6 h-px bg-slate-800 flex-grow max-w-xs"></span>
                     </h2>
 
-                    <div className="grid md:grid-cols-3 gap-8 mb-16">
-                        {experience.map((category, idx) => (
-                            <div key={idx} className="bg-slate-900/40 backdrop-blur-sm p-8 rounded-2xl border border-slate-800 hover:border-cyan-500/30 transition-all duration-300 hover:shadow-lg hover:shadow-cyan-900/20 group">
-                                <h3 className="text-xl font-semibold text-white mb-8 border-b border-slate-800 pb-4 group-hover:text-cyan-400 transition-colors">
-                                    {category.category}
-                                </h3>
-                                <div className="grid grid-cols-3 gap-8">
-                                    {category.skills.map((skill) => (
-                                        <div key={skill.name} className="flex flex-col items-center gap-3 group/icon">
-                                            <div className="p-3 bg-slate-800/50 rounded-lg group-hover/icon:bg-slate-800 transition-colors">
-                                                <i className={`${skill.iconClass} text-4xl group-hover/icon:scale-110 transition-transform duration-300`}></i>
+                    {/* Consolidating all categories into a single, large glassmorphism container */}
+                    <div className="bg-slate-900/50 backdrop-blur-sm p-10 rounded-2xl border border-slate-800/80 shadow-2xl shadow-cyan-900/10 mb-16">
+                        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+                            {experience.map((category, idx) => (
+                                <div key={idx} className="space-y-8">
+                                    <h3 className="text-xl font-semibold text-white/90 border-b border-slate-800 pb-4 flex items-center gap-3">
+                                        <div className="w-3 h-3 rounded-full bg-cyan-400/80"></div>
+                                        {category.category}
+                                    </h3>
+                                    <div className="grid grid-cols-2 gap-8">
+                                        {category.skills.map((skill) => (
+                                            <div
+                                                key={skill.name}
+                                                className="flex flex-col items-center gap-3 p-5 rounded-xl bg-slate-950/70 border border-slate-800 hover:border-cyan-500/50 hover:bg-slate-900 transition-all duration-300 group hover:shadow-lg hover:shadow-cyan-900/20"
+                                            >
+                                                {/* Premium icon container with subtle glow and shadow */}
+                                                <div className="p-4 bg-slate-900 rounded-lg shadow-inner shadow-cyan-900/20 group-hover:bg-slate-800 group-hover:shadow-md group-hover:shadow-cyan-500/30 transition-all flex items-center justify-center w-16 h-16">
+                                                    {skill.iconClass.includes('http') ? (
+                                                        <img
+                                                            src={skill.iconClass}
+                                                            alt={skill.name}
+                                                            className="w-10 h-10 object-contain group-hover:scale-110 transition-transform duration-300 opacity-90"
+                                                        />
+                                                    ) : (
+                                                        <i className={`${skill.iconClass} text-4xl group-hover:scale-110 transition-transform duration-300`}></i>
+                                                    )}
+                                                </div>
+                                                <span className="text-xs font-medium text-slate-500 group-hover:text-cyan-400/90 transition-colors">{skill.name}</span>
                                             </div>
-                                            <span className="text-xs font-medium text-slate-500 group-hover/icon:text-slate-300 transition-colors">{skill.name}</span>
-                                        </div>
-                                    ))}
+                                        ))}
                                 </div>
-                            </div>
-                        ))}
+                                </div>
+                                ))}
+                        </div>
                     </div>
 
                     <div className="mt-20">
@@ -416,7 +433,7 @@ function App() {
                             ))}
                         </div>
                         <p className="text-slate-600 text-sm font-mono">
-                            Designed & Built by ♥️ SadeshRaj.  Last Update: 09/01/2026
+                            Designed & Built by ♥️ SadeshRaj.  Last Update: 03/06/2026
                         </p>
                     </div>
                 </Section>
@@ -425,4 +442,4 @@ function App() {
     )
 }
 
-export default App
+export default App;

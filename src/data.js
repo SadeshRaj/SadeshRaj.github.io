@@ -1,3 +1,5 @@
+// src/data.js
+
 import { Github, Linkedin, Mail } from "lucide-react";
 
 export const personalInfo = {
@@ -19,6 +21,8 @@ export const experience = [
             { name: "HTML", iconClass: "devicon-html5-plain colored" },
             { name: "CSS", iconClass: "devicon-css3-plain colored" },
             { name: "JavaScript", iconClass: "devicon-javascript-plain colored" },
+            { name: "TypeScript", iconClass: "devicon-typescript-plain colored" },
+            { name: "TSX", iconClass: "devicon-react-original colored" },
             { name: "React", iconClass: "devicon-react-original colored" },
             { name: "Tailwind", iconClass: "devicon-tailwindcss-original colored" },
             { name: "Bootstrap", iconClass: "devicon-bootstrap-plain colored" }
@@ -28,9 +32,11 @@ export const experience = [
         category: "Backend",
         skills: [
             { name: "Java", iconClass: "devicon-java-plain colored" },
+            { name: "Spring Boot", iconClass: "devicon-spring-original colored" },
             { name: "Tomcat", iconClass: "devicon-tomcat-line" },
             { name: "Node.js", iconClass: "devicon-nodejs-plain colored" },
             { name: "Express", iconClass: "devicon-express-original" },
+            { name: "Hono", iconClass: "devicon-nodejs-plain" },
             { name: "Python", iconClass: "devicon-python-plain colored" }
         ]
     },
@@ -39,8 +45,19 @@ export const experience = [
         skills: [
             { name: "SQL", iconClass: "devicon-mysql-plain colored" },
             { name: "MongoDB", iconClass: "devicon-mongodb-plain colored" },
+            { name: "Firebase", iconClass: "devicon-firebase-plain colored" },
             { name: "GitHub", iconClass: "devicon-github-original" },
             { name: "Jupyter", iconClass: "devicon-jupyter-plain colored" }
+        ]
+    },
+    {
+        category: "Cloud & Deployment",
+        skills: [
+            { name: "Vercel", iconClass: "devicon-vercel-original" },
+            { name: "Cloudflare", iconClass: "devicon-cloudflare-plain colored" },
+            { name: "Render", iconClass: "https://cdn.simpleicons.org/render/white" },
+            { name: "Railway", iconClass: "devicon-railway-original" },
+            { name: "Netlify", iconClass: "devicon-netlify-plain colored" }
         ]
     }
 ];
@@ -72,6 +89,16 @@ export const education = [
 
 export const projects = [
     {
+        title: "Navro Wedz | Fine Art Wedding Photography",
+        desc: "A premium, photography-focused web application built for a client, featuring a high-end luxury interface. It includes client booking functionalities and a secure administrative dashboard for seamless management.",
+        tags: ["React", "JavaScript", "JSX"],
+        images: [
+            "/projects/NavroWedz/HeroSection.webp",
+            "/projects/NavroWedz/LogoBlack.png"
+        ],
+        links: { demo: "https://navrowedz.com/", code: "https://github.com/SadeshRaj" }
+    },
+    {
         title: "LankaCast News Extension",
         desc: "Chrome extension delivering real-time Sinhala news updates directly to the browser toolbar using background workers.",
         tags: ["JavaScript","RSS Feed", "Chrome API", "HTML/CSS"],
@@ -80,20 +107,19 @@ export const projects = [
             "./projects/LankaCast/2.png",
             "./projects/LankaCast/3.png",
         ],
-        links: { demo: "https://github.com/SadeshRaj/LankaCast/releases/tag/v1.0.0", code: "https://github.com/SadeshRaj/LankaCast" }
+        links: { demo: "https://chromewebstore.google.com/detail/akogncemlpgmleogjdblpbcdndlabhpk?utm_source=item-share-cb", code: "https://github.com/SadeshRaj/LankaCast" }
     },
     {
         title: "Invoice & BOQ PDF Generator",
         desc: "A web application built for CCSMC Company to create, preview, and download invoice and BOQ documents as professionally formatted PDFs.",
         tags: ["JSPservlet", "MySQL","JS","HTML","Tailwind"],
-        // ADD UP TO 3 IMAGE URLs HERE
         images: [
             "./projects/CCSMC/img1.png",
             "./projects/CCSMC/img2.png",
             "./projects/CCSMC/img3.png",
             "./projects/CCSMC/img4.png"
         ],
-        links: { demo: "https://github.com/SadeshRaj/LankaCast/releases/tag/v1.0.0", code: "https://github.com/SadeshRaj/LankaCast" }
+        links: { demo: "https://github.com/SadeshRaj", code: "https://github.com/SadeshRaj" }
     }
 ];
 
